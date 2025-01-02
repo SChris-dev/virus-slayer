@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Slayer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/corona.png" type="image/x-icon">
+</head>
+<body>
+    <!-- instruction -->
+    <div id="instructionPage">
+        <h1>Instruction Virus Slayer</h1>
+        <p>1. Input Username and click Play</p>
+        <p>2. Destroy Virus with D F J K Key</p>
+        <p>3. Reach High Score</p>
+        <p>4. Enjoy</p>
+        <input type="text" id="usernameInput" placeholder="Input Username">
+        <button id="startBtn">Play</button>
+    </div>
+
+    <!-- game -->
+    <div id="gameContainer" style="display: none;">
+        <div class="player-stats">
+            <div>
+                <p>Time: <span id="timerText">00:00</span></p>
+                <p>Score: <span id="scoreText">0</span></p>
+                <p>Fail: <span id="failText">0</span></p>
+                <p>Player: <span id="usernameText">0</span></p>
+            </div>
+            <div class="sidemenu">
+                <h2>Virus Slayer</h2>
+                <p id="resetGame">Restart</p>
+                <p id="backToMenu">Quit</p>
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="empty-div"></div>
+        <!-- pause -->
+        <div id="pauseContainer" style="display: none;">
+    
+        </div>
+        <div class="judgement-bar">
+            <div id="keyPressD"></div>
+            <div id="keyPressF"></div>
+            <div id="keyPressJ"></div>
+            <div id="keyPressK"></div>
+        </div>
+    </div>
+
+    <!-- game over -->
+    <div id="gameOverPage" style="display: none;">
+        <h3>Game Over</h3>
+        <p>Time: <span id="timerTextOver"></span></p>
+        <p>Score: <span id="scoreTextOver"></span></p>
+        <p>Player: <span id="usernameTextOver"></span></p>
+        <button id="resetGameOver">Restart</button>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

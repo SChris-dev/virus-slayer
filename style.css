@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0A0B0D;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* INSTRUCTION PAGE */
+#instructionPage {
+    display: flex;
+    flex-direction: column;
+    background-color: #1D2929;
+    color: white;
+    width: 1024;
+    height: 1024;
+    padding: 50px;
+}
+
+#instructionPage input {
+    padding: 20px 15px;
+    font-size: 18px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+#instructionPage button {
+    padding: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: .2s ease all;
+}
+
+#instructionPage button:hover {
+    background-color: transparent;
+    color: red;
+    font-weight: 800;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+/* CANVAS(GAME) */
+#gameContainer {
+    width: 960px;
+    height: 600px;
+    border: 1px solid red;
+    justify-content: center;
+}
+
+canvas {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.player-stats {
+    width: 320px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidemenu {
+    background-color: #1D2929;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.sidemenu p {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.empty-div {
+    width: 320px;
+}
+
+.judgement-bar {
+    position: absolute;
+    width: 320px;
+    height: 10px;
+    background-color: gray;
+    top: 530px;
+}
+
+/* PAUSE */
+#pauseContainer {
+    position: absolute;
+}
+
+/* GAMEOVER */
+
+#gameOverPage {
+    display: flex;
+    flex-direction: column;
+    background-color: #1D2929;
+    color: white;
+    width: 1024;
+    height: 1024;
+    padding: 50px;
+}
+
+#gameOverPage button {
+    padding: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
